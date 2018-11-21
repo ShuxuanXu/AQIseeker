@@ -125,13 +125,3 @@ class AQIcrawler():
             data_frame = pandas.DataFrame(to_be_written, columns=self._headers)
             csv_name = '%s_%s.csv' %(self.city, self.yyyymm) # generate a unique file name for the data
             data_frame.to_csv(os.path.join(outputDir, csv_name)) # write to csv
-
-
-# from crawler import AQIcrawler
-# city='南京'
-# month = '201707'
-# this_page = AQIcrawler(city, month, 10)
-# this_page.getData()
-
-# this_page.write2csv('output')
-
