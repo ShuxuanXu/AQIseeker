@@ -2,11 +2,11 @@
 
 # Author: Shuxuan Xu <shuxuan.xu@postgrad.manchester.ac.uk>
 
-from crawler import AQIcrawler
+from crawler import AQIseeker
 from setting_parser import getCityTime
 
 # if you want to extracted the AQI data from only one city:
-this_page = AQIcrawler('南京', '201703')
+this_page = AQIseeker('南京', '201703')
 this_page.getData()
 extracted_dict = this_page.metadict # get the data dict
 
@@ -18,7 +18,7 @@ city_time = {
 
 for city in city_time.keys():
     for month in city_time[city]:
-        temp_page = AQIcrawler(city, month)
+        temp_page = AQIseeker(city, month)
         temp_page.getData()
         temp_page.write2csv('output') # write the data to csv
 

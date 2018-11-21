@@ -11,7 +11,7 @@ import pandas
 
 # fixed website;
 # variable cities and times
-class AQIcrawler():
+class AQIseeker():
     """
     class AQIcrawler(city, yyyymm, max_request=3)
 
