@@ -1,5 +1,5 @@
-# AQIcrawler
-A simple crawler to acquire the AQI and relevant data from<br>
+# AQIseeker
+A simple crawler to acquire the air quality data in China from<br>
 [空气质量历史数据查询](https://www.aqistudy.cn/historydata/daydata.php)
 
 ## Dependency
