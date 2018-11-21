@@ -15,7 +15,7 @@ Install <code>requests-html</code> by using<br>
 
 <p>
 Acquire the data from the website<br>
-    <code>this_page = AQIcrawler('南京', '201703', 5) # the 3rd arguement is the maximum request attempts. By default it's 5</code><br>
+    <code>this_page = AQIcrawler('南京', '201703', 5) # '5' maximum request attempts (default=5)</code><br>
     <code>this_page.getData()</code><br>
     <code>this_page.metadict # access the dict that holds the data</code><br>
 </p>
