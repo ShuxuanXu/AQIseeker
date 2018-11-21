@@ -15,11 +15,9 @@ Install <code>requests-html</code> by using<br>
 
 <p>
 Acquire the data from the website<br>
-    <code>
-        this_page = AQIcrawler('南京', '201703', 5)<br>
-        this_page.getData()<br>
-        this_page.metadict # access the dict that holds the data<br>
-    </code>
+    <code>this_page = AQIcrawler('南京', '201703', 5)</code><br>
+    <code>this_page.getData()</code><br>
+    <code>this_page.metadict # access the dict that holds the data</code><br>
 </p>
 
 
@@ -28,22 +26,16 @@ Acquire the data from the website<br>
 
 <p>
 Create a text file 'some_cities.txt' to hold some contents like below<br>
-    <code>
-        南京 201701-201706<br>
-        上海 201609-201703<br>
-        北京 201610-201705<br>
-    </code>
+    <code>南京 201701-201706</code><br>
+    <code>上海 201609-201703</code><br>
+    <code>北京 201610-201705</code><br>
 the format should be
-    <code>
-        city_name yyyymm-yyyymm
-    </code>
+    <code>city_name yyyymm-yyyymm</code><br>
 </p>
 
 <p>
 Import a parser<br>
-    <code>
-        from setting_parser import getCityTime<br>
-        city_time_dict = getCityTime('some_cities.txt') # return a dict<br>
-    </code>
+    <code>from setting_parser import getCityTime</code><br>
+    <code>city_time_dict = getCityTime('some_cities.txt') # return a dict</code><br>
 The parser will return a dictionary containing the city names (as indice) and the month list.
 </p>
