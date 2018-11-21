@@ -64,7 +64,7 @@ class AQIcrawler():
         ]
     _domain = 'https://www.aqistudy.cn/historydata/daydata.php'
 
-    def __init__(self, city, yyyymm, max_request=3):
+    def __init__(self, city, yyyymm, max_request=5):
         self.city = city
         self.yyyymm = yyyymm
         self.URL = self._domain + '?city=%s&month=%s' %(city, yyyymm) # get the URL of current city and month
