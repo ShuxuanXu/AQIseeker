@@ -11,7 +11,7 @@ Install <code>requests-html</code> by using<br>
 ## How to use
 ### Acquire the data
 <p>Import the crawler class<br>
-<code>from crawler import AQIcrawler</code></p>
+<code>from crawler import AQIseeker</code></p>
 
 <p>
 Acquire the data from the website<br>
